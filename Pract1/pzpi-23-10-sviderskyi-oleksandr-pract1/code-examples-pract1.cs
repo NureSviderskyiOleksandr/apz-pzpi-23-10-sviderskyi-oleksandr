@@ -1,3 +1,7 @@
+//Запити до ШІ: Ти експерт із C# та архітектури ПЗ. Розроби приклад програмного застосунку для шаблону Abstract Factory. 
+//Проаналізуй, як додавання абсолютно нового ТИПУ продукту впливає на інтерфейс абстрактної фабрики. 
+//Надай код та поясни, як уникнути повної перебудови всіх фабрик у реальному великому проекті.
+
 namespace ResearchAbstractFactory
 {
     // --- Інтерфейси продуктів ---
@@ -77,10 +81,10 @@ namespace ResearchAbstractFactory
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Сбор орды:");
+            Console.WriteLine("Збір орди:");
             CreateArmy(new OrcFactory());
 
-            Console.WriteLine("Сбор эльфийского союза:");
+            Console.WriteLine("Збір ельфів:");
             CreateArmy(new ElfFactory());
         }
     }
